@@ -13,3 +13,12 @@ ingredients["drinks"].each do |ingredient|
   i = Ingredient.create(name: ingredient["strIngredient1"])
   puts "create #{i.name}"
 end
+
+
+puts "Create cocktails"
+url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a"
+cocktails = JSON.parse(open(url).read)
+cocktails["drinks"].each do |cocktail|
+  i = Cocktail.create(name: cocktail["strCocktails1"])
+  puts "create #{i.name}"
+end
