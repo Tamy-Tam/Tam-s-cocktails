@@ -8,6 +8,10 @@ class CocktailsController < ApplicationController
   def show
   end
 
+  def new
+    @cocktail = Cocktail.new
+  end
+
   # POST
   def create
     @cocktail = Cocktail.new(cocktail_params)
@@ -16,10 +20,6 @@ class CocktailsController < ApplicationController
     else
       render :new
     end
-  end
-
-  def new
-    @cocktail = Cocktail.new
   end
 
   private
