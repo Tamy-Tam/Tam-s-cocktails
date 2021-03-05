@@ -1,4 +1,9 @@
 class DosesController < ApplicationController
+
+  def show
+    @dose = Dose.find(params[:id])
+  end
+
   def new
     @cocktail = Cocktail.find(params[:cocktail_id])
     @dose = Dose.new
@@ -9,10 +14,9 @@ class DosesController < ApplicationController
     @dose = Dose.new(dose_params)
     @dose.cocktail = @cocktail
     if @dose.save
-      redirect_to cocktail_path(@cocktail)
+      redirect_to @dose
     else
-      @review = Review.new
-      render "cocktails/show"
+      render :new
     end
   end
 
