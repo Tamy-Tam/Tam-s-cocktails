@@ -14,11 +14,17 @@ ingredients["drinks"].each do |ingredient|
   puts "create #{i.name}"
 end
 
+# puts puts "Create cocktails"
+# water = Cocktail.create(name: "Water", doses: "1L")
+# mojito = Cocktail.create(name: "Mojito", doses: "3cL")
+# cidre = Cocktail.create(name: "Cider", doses: "75cL")
+# puts "Created cocktails"
 
-puts "Create cocktails"
-url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a"
-cocktails = JSON.parse(open(url).read)
-cocktails["drinks"].each do |cocktail|
-  i = Cocktail.create(name: cocktail["strCocktails1"])
-  puts "create #{i.name}"
-end
+
+# puts "Create cocktails"
+# url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a"
+# cocktails = JSON.parse(open(url).read)
+# cocktails["drinks"].each do |cocktail|
+#   i = Cocktail.create(name: cocktail["strCocktails1"])
+#   puts "create #{i.name}"
+# end
