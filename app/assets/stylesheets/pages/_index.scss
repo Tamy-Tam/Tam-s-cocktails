@@ -1,17 +1,31 @@
 // Import page-specific CSS files here.
 @import "home";
 
+$midnightblue :#020834;
+$indexblue : #041927;
+
+body {
+  background-color: #041927;
+}
+.text-center {
+  text-align: center;
+}
+
 .banner {
+  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1468072114808-903e572b8ead?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80');
+  background-size: cover;
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 75px 0;
 }
 
 .banner-content h1 {
+  padding-bottom: 105px;
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 54px;
   font-weight: bold;
   margin-left: 25px;
 }
@@ -29,10 +43,10 @@
 }
 
 
-body {
-  background-image: url('https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
-  background-size: cover;
-}
+// body {
+//   background-image: url('https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
+//   background-size: cover;
+// }
 
 // EN COURS
 
@@ -40,21 +54,24 @@ body {
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  h2 {
+    font-size: 40px;
+    opacity: .8;
+  }
 }
-
 .cards {
+  margin: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
 }
 
@@ -82,15 +99,13 @@ body {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
-
