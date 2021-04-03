@@ -14,6 +14,11 @@ ingredients["drinks"].each do |ingredient|
   puts "create #{i.name}"
 end
 
+puts "Create 1 cocktail"
+  mojito = Cocktail.new(name: "Mojito", photo: URI('https://www.masculin.com/wp-content/uploads/sites/2/article/12863/variante-mojito.jpg'))
+puts "Created mojito!"
+
+
 # puts puts "Create cocktails"
 # water = Cocktail.create(name: "Water", doses: "1L")
 # mojito = Cocktail.create(name: "Mojito", doses: "3cL")
