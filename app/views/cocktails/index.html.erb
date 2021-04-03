@@ -19,7 +19,6 @@
       <div class="card-category">
         <p> <%= cocktail.photo %></p>
         <h2><%= cocktail.name %></h2>
-         <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
       </div>
     <%= link_to "See more", cocktail_path(cocktail), class: 'card-link' %>
     </div>
