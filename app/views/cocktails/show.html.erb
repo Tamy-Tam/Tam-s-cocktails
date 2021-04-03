@@ -10,8 +10,8 @@
     <div class="show-container text-center">
 
       <h1 id="cocktail-name" class="text-center"><%= @cocktail.name %></h1>
-      <p class="text-center" id="cocktail-photo"><%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %></p>
-      <p class="text-center" id="index-link">
+      <p class="text-center" id="cocktail-photo"><%= cl_image_tag @cocktail.photo.key, gravity: :center, height: 400, width: 400, crop: :fill %></p>
+      <p class="link text-center">
         <%= link_to "Back to all cocktails", root_path %>
       </p>
 
