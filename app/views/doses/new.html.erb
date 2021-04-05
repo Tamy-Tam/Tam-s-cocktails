@@ -1,1 +1,27 @@
-new.html.erb
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New dose</title>
+</head>
+<body>
+
+  <div class="row justify-content-center text-center">
+    <div class="col-md-8">
+      <%= simple_form_for ([@cocktail, @dose]) do |f| %>
+        <%= f.association :ingredient %>
+        <%= f.input :description, label: "Dose(s)" %>
+        <%= f.button :submit, class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!-- To access  -->
+
+      <!-- <div class="new-dose">
+        <%= link_to, new_cocktail_dose_path(@cocktail) %>
+      </div> -->
