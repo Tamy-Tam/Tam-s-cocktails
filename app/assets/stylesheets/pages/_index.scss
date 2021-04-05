@@ -78,6 +78,14 @@ body {
   grid-gap: 16px;
 }
 
+.cocktail-title {
+  text-decoration: none;
+  font-size: 52px;
+  font-style: oblique;
+  color: #ab8d7b;
+  font-weight: lighter;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
