@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>A cocktail show</title>
 </head>
 <body>
   <div class="background-form">
@@ -14,10 +14,6 @@
       <p class="link text-center">
         <%= link_to "Back to all cocktails", root_path %>
       </p>
-
-      <div class="new-dose">
-        <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %>
-      </div>
 
 
 
@@ -34,6 +30,18 @@
           </table>
         </div>
       </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-lg-5 mr-auto ml-auto mt-4 mb-4 pb-4">
+          <h5>Add New Ingredients</h5>
+            <%= simple_form_for ([@cocktail, @dose]) do |f| %>
+              <%= f.association :ingredient %>
+              <%= f.input :description, label: "Dose(s)" %>
+              <%= f.button :submit, class: 'btn btn-warning' %>
+            <% end %>
+        </div>
+      </div>
+
     </div>
   </div>
 
