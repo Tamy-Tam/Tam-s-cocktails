@@ -8,3 +8,28 @@
   color: #68270f;
   font-style: italic;
 }
+
+.delete_dose {
+  text-decoration: none;
+  color: #68270f;
+  font-style: italic;
+  font-size: smaller;
+}
+
+
+.ingredients-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-top: 25px;
+  font-size: x-large;
+}
+
+img {
+  border: 15px solid #905d233b;
+}
+
+
+.recipe {
+  margin-top: 50px;
+}

@@ -15,22 +15,19 @@
         <%= link_to "Back to all cocktails", root_path %>
       </p>
 
-
-
       <div class="row text-center">
         <div class="col-sm-12 col-md-6 col-lg-5 mr-auto ml-auto mt-4 mb-4 pb-4">
           <% if !@cocktail.doses[0].nil? %>
-          <h3 class="text-center">Recipe</h3>
-          <table class="table table-bordered text-center">
+          <h3 class="recipe text-center">Recipe</h3>
+          <table class="table text-center">
             <tbody>
               <thead>
-                <div class="card-ingredient">
+                <div class="ingredients-card">
                   <% @cocktail.doses.each do |dose| %>
                     <%= dose.ingredient.name%> | <%= dose.description %>
                     <%= link_to "Delete dose", dose_path(dose), method: "delete", class: "delete_dose" %>
                   <% end %>
                 </div>
-
               </thead>
             </tbody>
           </table>
