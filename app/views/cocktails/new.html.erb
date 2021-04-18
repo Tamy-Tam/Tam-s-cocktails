@@ -13,7 +13,12 @@
           <h1>Create a new cocktail</h1>
           <%= simple_form_for(@cocktail) do |f| %>
             <%= f.input :name %>
-            <%= f.input :photo, as: :file %>
+            <label class="btn btn-primary btn-file">
+              Add a photo ❤️
+              <span style="display:none;">
+                <%= f.input :photos, as: :file %>
+              </span>
+            </label>
             <%= f.button :submit, class: 'btn btn-primary' %>
           <% end %>
         </div>
@@ -22,4 +27,3 @@
   </div>
 </body>
 </html>
-
