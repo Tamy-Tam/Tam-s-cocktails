@@ -8,6 +8,8 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 gem 'cloudinary', '~> 1.16.0'
 gem 'mini_magick'
+gem 'mimemagic', '~> 0.4.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Use postgresql as the database for Active Record
