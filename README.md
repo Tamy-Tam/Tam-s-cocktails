@@ -1,25 +1,9 @@
-# README
-https://tamaras-cocktails.herokuapp.com/
+# Tam's  Cocktails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Create your own special cocktails ❤️
 
-Things you may want to cover:
+At Le [Wagon bootcamp](https://www.lewagon.com/fr) I got to create this cocktail app. I later worked on it some more, so as to make cocktail creation all that better. 
 
-* Ruby version
+🖥 You can find my site [here](https://tamaras-cocktails.herokuapp.com/)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+🍸
