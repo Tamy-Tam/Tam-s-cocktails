@@ -18,3 +18,16 @@ body {
 .form-control:checked {
   background-color: #ffbe84a1;
 }
+
+.btn-file {
+  background-color: #986507cf;
+  border: 1px solid #986507cf;
+  border-radius: 5px;
+}
+
+.btn-file:hover {
+  background-color: #986507cf;
+  border: 1px solid #986507cf;
+  border-radius: 5px;
+  font-size: larger;
+}
