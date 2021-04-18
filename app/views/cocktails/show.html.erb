@@ -41,7 +41,8 @@
         <div class="col-12 col-lg-5 mr-auto ml-auto mt-4 mb-4 pb-4">
           <h5>Add New Ingredients</h5>
             <%= simple_form_for ([@cocktail, @dose]) do |f| %>
-              <%= f.association :ingredient, input_html: { class: 'multiple-select' } %>
+
+              <%= f.association :ingredient, label: "Add your own ingredient" %>
               <%= f.input :description, label: "Dose(s)" %>
               <%= f.button :submit, "Create your Dose 📝", class: 'btn btn-warning btn-cocktail btn-lg' %>
             <% end %>

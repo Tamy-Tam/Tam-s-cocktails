@@ -1,4 +1,4 @@
-require 'open-uri'
+# require 'open-uri'
 
 puts "Destroy ingredients"
 Ingredient.destroy_all if Rails.env.development?
