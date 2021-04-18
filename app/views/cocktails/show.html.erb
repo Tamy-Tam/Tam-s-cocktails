@@ -41,7 +41,7 @@
             <%= simple_form_for ([@cocktail, @dose]) do |f| %>
               <%= f.association :ingredient, input_html: { class: 'multiple-select' } %>
               <%= f.input :description, label: "Dose(s)" %>
-              <%= f.button :submit, class: 'btn btn-warning' %>
+              <%= f.button :submit, "Create your Dose 📝", class: 'btn btn-warning btn-cocktail btn-lg' %>
             <% end %>
         </div>
       </div>
