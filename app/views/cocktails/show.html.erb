@@ -13,6 +13,8 @@
       <p class="text-center" id="cocktail-photo"><%= cl_image_tag @cocktail.photo.key, gravity: :center, height: 400, width: 400, crop: :fill %></p>
       <p class="link text-center">
         <%= link_to "Back to all cocktails", root_path %>
+        <br>
+        <%= link_to "Delete this cocktail 🍸", cocktail_path(@cocktail), method: "delete", data: { confirm: 'Are you sure?' } %>
       </p>
 
       <div class="row text-center">
