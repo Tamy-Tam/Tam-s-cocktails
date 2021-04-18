@@ -53,6 +53,12 @@ body {
 
 // EN COURS
 
+.cards {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
 
 .card-category {
   background-size: cover;
@@ -70,12 +76,6 @@ body {
     font-size: 40px;
     opacity: .8;
   }
-}
-.cards {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
 }
 
 .cocktail-title {

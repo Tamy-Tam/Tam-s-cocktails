@@ -10,7 +10,7 @@
       <h1 class="text-center">Tam's Cocktails</h1>
       <p id="banner-text">Great beverages to spend some chill out time with friends</p>
       <%= link_to "Add a cocktail 🍸", new_cocktail_path, class: "btn btn-warning btn-lg" %>
-      </div>
+    </div>
   </div>
 
   <div class="cards m-5">
@@ -22,13 +22,12 @@
         <%= link_to cocktail_path(cocktail), class: 'card-link text-center' do %>
 
           <% if cocktail.photo.attached? %>
-            <div class="card-category" style="background-image: linear-gradient(to bottom, rgb(255 255 255 / 0%) 0%,rgba(244,244,244,0.03) 62%,rgb(237 237 237 / 82%) 100%), url('<%= cl_image_path cocktail.photo.key, crop: :fill %>')">
+            <div class="card-category" style="background-image: linear-gradient(to bottom, rgb(255 255 255 / 0%) 0%,rgba(244,244,244,0.03) 62%,rgb(237 237 237 / 82%) 100%), url('<%= cl_image_path cocktail.photo.key, crop: :fill %>')"></div>
           <% end %>
-          </div>
+
           <h2 class="cocktail-title text-center"><%= cocktail.name %></h2>
-
         <% end %>
-
+      </div>
     </div>
   <% end %>
 
