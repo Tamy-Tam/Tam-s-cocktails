@@ -21,11 +21,14 @@
               </span>
             </label>
             <br>
-            <%= f.button :submit, "Create a cocktail 🍸", class: 'btn btn-warning btn-lg btn-submit' %>
+            <%= f.button :submit, "Create a cocktail 🍸", class: 'btn btn-warning btn-lg btn-cocktail' %>
           <% end %>
         </div>
       </div>
     </div>
+    <p class="link text-center">
+      <%= link_to "Back to all cocktails", root_path %>
+    </p>
   </div>
 </body>
 </html>
